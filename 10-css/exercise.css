@@ -1,42 +1,49 @@
-/* 10-css — your work goes in this file.
- *
- * The lesson is example.css:      npm run open 10
- * See your own page with:         npm run open 10 exercise
- * Check your work with:           npm test 10
- *
- * exercise.html is written for you and must not be edited. Every class and
- * element named below already exists in it.
- *
- * Write each rule where its TODO is, then delete the TODO comment. The exact
- * colours, sizes and fonts are yours to choose unless a TODO says otherwise —
- * make it look like something you would not be embarrassed by.
- *
- * Keep the page open in the browser and refresh after each change.
- */
 
-/* TODO: a rule for `body` that sets
- *       font-family, color, and background-color. */
+/* Style the whole page */
+body {
+  font-family: Arial, sans-serif;
+  color: #263238;
+  background-color: #f1f5f9;
+}
 
-/* TODO: a rule for `.page` that sets
- *       max-width, and margin (use `0 auto` to centre it). */
+/* Centre the page and limit its width */
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+}
 
-/* TODO: a rule for `header` that sets
- *       display: flex;
- *       justify-content: space-between;
- *       align-items: center;
- *       and one more property of your choosing. */
+/* Arrange the header items in a row */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 2px solid #cbd5e1;
+}
 
-/* TODO: a rule for `nav a` — a descendant selector, so it only affects links
- *       inside the nav — that sets
- *       color, and text-decoration. */
+/* Style links inside the navigation */
+nav a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
 
-/* TODO: a rule for `.card-list` that sets
- *       display: flex;
- *       gap (any size);
- *       flex-wrap: wrap; */
+/* Arrange cards next to each other */
+.card-list {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-/* TODO: a rule for `.card` that sets
- *       padding, border-radius, and background-color. */
+/* Give each card space and a background */
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  background-color: #ffffff;
+  flex: 1 1 220px;
+}
 
-/* TODO: a rule for `.price` that sets
- *       color, and font-weight. */
+/* Highlight the prices */
+.price {
+  color: #166534;
+  font-weight: bold;
+}
